@@ -4,12 +4,12 @@ import plotly.express as px
 
 # Configuração da página
 st.set_page_config(
-    page_title="Minha Primeira App Streamlit",
+    page_title="DATAWISE",
     layout="wide"
 )
 
 # Título principal
-st.title("Bem-vindo à minha primeira aplicação Streamlit! 🎈")
+st.title("Bem-vindo à minha primeira aplicação DATAWISE! 🎈")
 
 # Barra lateral
 st.sidebar.header("Configurações")
