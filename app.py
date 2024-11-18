@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 # Configuração da página
 st.set_page_config(
@@ -34,8 +33,7 @@ if uploaded_file is not None:
         coluna_x = st.selectbox("Escolha a coluna para o eixo X:", df.columns)
         coluna_y = st.selectbox("Escolha a coluna para o eixo Y:", df.columns)
         
-        fig = px.scatter(df, x=coluna_x, y=coluna_y)
-        st.plotly_chart(fig)
+        st.scatter_chart(df, x=coluna_x, y=coluna_y)
 
 # Exemplo de diferentes tipos de input
 st.subheader("Exemplos de inputs:")
